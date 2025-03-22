@@ -31,7 +31,7 @@
         }       
      }while (guess != random);
     
-        printf("\nBye Bye Thnaks for Playing.");
+        printf("\n Thanks for Playing.");
         printf("\n Developed By : Ushma Talreja");
     
         return 0;

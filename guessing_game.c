@@ -10,11 +10,11 @@
     srand(time(NULL));
 
     printf("Welcome to the guessing number game\n");
-    random = rand() * 100 +1;
+    random = rand() % 100 +1;
 
     do{
         printf("\nPlease enter your guess between (1 to 100):");
-        scanf(%d,&guess);
+        scanf("%d",&guess);
         no_of_guess++;
 
         if (guess < random)
@@ -29,11 +29,10 @@
         {
             printf("Congratulations !!!You have successfully guessed the number in %d attempt", no_of_guess);
         }       
-     }
+     }while (guess != random);
     
-    while (guess != random);
-    {
         printf("\nBye Bye Thnaks for Playing.");
         printf("\n Developed By : Ushma Talreja");
-    }
+    
+        return 0;
 }

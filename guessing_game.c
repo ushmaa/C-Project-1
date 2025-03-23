@@ -40,7 +40,7 @@
     do{
         printf("\nPlease enter your guess between (1 to 100):");
         scanf("%d",&guess);
-        no_of_guess++;
+        no_of_guess ++;
 
         if (guess < random)
         {
@@ -53,6 +53,8 @@
         else
         {
             printf("Congratulations !!!You have successfully guessed the number in %d attempt", no_of_guess);
+
+            writeToHTML(no_of_guess, random, guess); 
         }       
      }while (guess != random);
     
